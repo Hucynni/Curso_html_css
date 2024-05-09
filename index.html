@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Responsivo</title>
+    <link rel="stylesheet" href="style do Site.css">
+<style>
+    {
+        
+        :root{
+
+            --bgnav: #333;
+            --font: white;
+            --bgsite:#f1f1f1;
+            --img:color: #aaa;
+
+        }
+
+        body{
+
+            padding: 10px;
+            background: var(--bgSite);
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        header{
+
+            background: var(--font);
+            height: 100px;
+            width: 100%;
+        }
+
+        nav{
+
+            background: var(--bgnav);
+            width: 100%;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        nav a{
+
+            text-decoration: none;
+            color: var(--font);
+            padding: 16px;
+            flex: 1;
+            min-width: 120 px;
+            text-align: center;
+        }
+
+        section{
+
+            background: var(--font);
+            height: 350px;
+            margin-bottom: 2%;
+
+        }
+
+        #section1, #section2, #contato{
+            width: 74%;
+            
+        }
+
+        #sobremim, #postagens,#redes{
+            width: 24%;
+            margin-left: 2%;
+            
+        }
+
+        footer{
+
+            width: 100%;
+            padding: 30%;
+            text-align: center;
+            background: var(--font);
+        }
+        @media( max-width:800px ){
+            border{
+                flex-direction: column;
+            }
+        nav{
+                flex-direction: column;
+            }
+
+        #section1, #section2, #contato{
+            width: 100%;
+
+            }
+            #sobremim,#postagens,#redes
+        {
+            width: 100%;
+            margin-left: 0%;
+        }
+        #contato{
+            order: 7;
+        }
+        footer{
+            order: 8;
+        }
+        }    }
+</style>
+</head>
+<body>
+    <header> Meu Site Responsivo</header>
+    <p>redimensione a janela do navegador para ver como ele re</p>
+    <nav></nav>
+
+
+    <section id="</section"><h2>sessão 1</h2></section>
+    <section id="sobremi"><h2>sobre mim</h2></section>
+    <section id="section2"><h2>sessão 2</h2></section>
+    <section>postagens</section>
+    <section>contato</section>
+    <section>redes</section>
+
+</body>
+</html>

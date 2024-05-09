@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --bg-btn: url ('moon-stars.svg');
+            --bg-site: white;
+        }
+
+        .dark{
+            --bg-btn: url('sun.svg');
+            --bg-site: #490909;
+        }
+        body {
+            background: var(--bg-site);
+        }
+
+        #btn{
+            height: 30px;
+            width: 30px;
+            border: radius 50%;
+            border: 1px solid black ;
+            background-color: white var(--bg-btn
+            ) no-repeat center center;
+            cursor: pointer;
+            transition: background 0.9s;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="btn" onclik="toggleMode()"> </div>
+
+
+
+
+    <script>
+        function toggleMode() {
+            const html = document.documentElement;
+            html.classList.toggle(dark);
+        }
+    </script>
+</body>
+</html>

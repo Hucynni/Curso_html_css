@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(176, 211, 205);
+}
+
+h1{
+    text-align: center;
+    border:2px solid #b62f2f ;
+    background: #b62f2f;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center;
+    border: 2px solid #b62f2f;
+    background-color: #b62f2f;
+    border-radius: 10px;
+}
+
+img{
+    margin: auto;
+    display: block;
+    margin: 0% auto;
+    border-radius: 10px;
+    width: 500px;
+}
+
+button{
+    padding: 3px;
+    border: 0px solid;
+    border-radius: 10px;
+    margin:auto;
+    background-color: rgb(200, 235, 235);
+    cursor: pointer;
+}
+
+iframe{
+    display: flex;
+    margin: 0% auto;
+}
