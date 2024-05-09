@@ -1,0 +1,50 @@
+body{
+background-color: rgb(132, 133, 136);
+}
+
+img{
+    border-radius: 20px;
+    margin: 0% auto;
+    display: block;
+}
+
+h1{
+    width: 400px;
+    margin: 10px auto;
+    text-align: center;
+    border: 0px solid #abce72;
+    background-color: #abce72;
+    border-radius: 10px;
+}
+
+.nome0{
+    text-align: center;
+}
+
+.nome1{
+    left: auto;
+    width: 400px;
+    border-radius: 10px;
+    border: 0px solid #abce72;
+    background-color: #abce72;
+    text-align: center;
+    margin: auto;
+    
+}
+
+h4{
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    border: 0px solid #abce72;
+    background-color: #abce72;
+}
+
+p{
+    text-align: center;
+}
+.link1{
+    margin: 400;
+    text-align: center;
+}
