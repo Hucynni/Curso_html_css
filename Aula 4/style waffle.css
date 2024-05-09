@@ -1,44 +1,57 @@
 body{
-    background-color: rgb(176, 211, 205);
+    background-color: rgb(202, 138, 59);
+    image-resolution: 100%;
 }
 
-h3{
-    
+h2{
+    margin-left: 50px;
 }
 
-}
 h1{
     text-align: center;
-    border:2px solid #b62f2f ;
-    background: #b62f2f;
+    
     border-radius: 10px;
 }
 
 #nome{
     text-align: center;
-    border: 2px solid #b62f2f;
-    background-color: #b62f2f;
     border-radius: 10px;
 }
 
 img{
-    margin: auto;
-    display: block;
+    
+    margin:left 100%;
     margin: 0% auto;
     border-radius: 10px;
-    width: 500px;
+    
 }
 
 button{
+    cursor: pointer;
     padding: 3px;
     border: 0px solid;
     border-radius: 10px;
     margin:auto;
-    background-color: rgb(200, 235, 235);
-    cursor: pointer;
+
 }
 
 iframe{
     display: flex;
     margin: 0% auto;
+}
+.container{
+    margin-top: 100px;
+    display: flex;
+}
+.container1{
+margin-left: 300px;
+}
+
+.texto{
+    margin-left: 50px;
+}
+
+.name{
+    
+    margin-left: 50px;
 }
