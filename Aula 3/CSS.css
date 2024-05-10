@@ -1,0 +1,58 @@
+/* Posso usar assim caso eu queira usar esse tipo de cor nas outras tags, assim já altera para todas.
+Ex: background: var(--primary-100);
+
+:root {
+    --primary-100:#d4eaf7; 
+    --primary-200:#b6ccd8; 
+    --primary-300:#3b3c3d; 
+    --accent-100:#71c4ef; 
+    --acent-200:#00668c; 
+    --text-100:#1d1c1c; 
+    --text-200:#313d44; 
+    --bg-100:#ffefb; 
+    --bg-200:#f5f4f1; 
+    --bg-300:#cccbc8;
+}
+       */
+
+       @import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&display=swap');/* Isso aqui foi o import, ai você só exclui as tagas de style */
+
+       /* Exeplo da explicação Tag Pai, Filho e irmão. A Tag Body e o Pai, o que tem dentro dela e a tag filho, e o que está junto com a tag filho e a tag irmão */
+       
+       /* Se eu pegasse aqui e colocasse h1 ~ h2, em vez de alterar somente para as tags h1, iria alterar para todas as tags h1 e h2 */
+       h1 {/* Seletor */
+           color: blueviolet; /* Propriedade: Atributo color, altera a cor da letra.*/
+           border: 3px solid black; /* Temos tipo de borda: solid, dotted,  */
+           background: aquamarine;/* altera a cor de fundo */
+       }
+       
+       #titulo-um {/* Formatação da tag id relacionada, vai formatar tadas as tags com esse id */
+           background:  red;
+       }
+       
+       #titulo-dois {
+           background: greenyellow;
+       }
+       
+       h2{
+           color: blue;
+           border: 2px dotted black;/* alterar a borda */
+       }
+       
+       p {
+           color: rgb(75, 80, 51);
+           font-size: 24px;/* Alterar tamanho da fonte */
+           font-family: "Jacquard 12 Charted";/* Você pode ir no google font e copiar códigos, copia a partir do font-family: "......" */
+       }
+       
+       ul > li { /* Desse jeito ul > li significa que será modificado todo li que estiver dentro de um ul */
+           background: red;
+       }
+       
+       .subTitulo1{
+           color: cornflowerblue;
+       }
+       
+       .subTitulo2{
+           color: darkgoldenrod;
+       }

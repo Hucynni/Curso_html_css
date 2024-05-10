@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #botao {
+            display: none;
+        }
+
+        label[for='botao'] {
+            cursor: pointer;
+            background: black;
+            color: white;
+            padding: 10px;
+            width: 40px;
+
+            display: none;
+        }
+
+        #menu {
+            position: relative;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            width: 80px;
+            text-align: center;
+        }
+        
+        a:hover {
+            outline: 2px solid orange; /* não ocupa espaço quando passa o mouse em cima */
+        }
+
+        @media (max-width: 700px) {
+            #menu {
+                margin-top: -500px;
+            }
+            label[for='botao'] {
+                display: block;
+            }
+            #botao:checked ~ #menu {
+                margin-top: 0px;
+            }
+            a {
+                display: block;
+                width: 100%;
+            }
+        }/* usado para fazer menu, pequeno truque */
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="botao">
+    <label for="botao">&#9776</label>
+    <nav id="menu">
+        <a href=""> Item 1 </a>
+        <a href=""> Item 2 </a>
+        <a href=""> Item 3 </a>
+        <a href=""> Item 4 </a>
+    </nav>
+</body>
+</html>

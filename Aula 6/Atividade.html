@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: calc(100vh + 1000px);
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: dodgerblue;
+        }
+
+        #divStatic {
+            position: static;/* Padrão já vem static */
+
+            /* top: 0;
+            right: 0;
+            bottom: 0;
+            left: 500px; */
+        }
+
+        #divRelative {
+            position: relative;
+            top: 50px;
+            left: 300px;
+        }
+
+        #divFixed {
+            position: fixed;
+            left: 400px;
+        }
+
+        #Pai {
+            position: relative;
+        }
+
+        #divAbsolute {
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            bottom: 0;
+        }
+
+        #divSticky {
+            position: sticky;
+            top: 0;
+        }
+
+        @media (max-width: 570px) {
+            div {
+                width: 300px;
+                height: 100px;
+                background: goldenrod;
+            }
+            a {
+                display: block;
+            }
+        }/* A tag media serve para mudar o que foi pedido quando você diminuir o tamanho da tela para o pedido */
+    </style>
+<body>
+    
+    <h1> Posições </h1>
+
+    <h2> Posições Estáticas </h2>
+    <ul>
+        <li>Não é posicionado de nenhuma maneira expecial</li>
+        <li>Segue o fluxo normal da página</li>
+        <li>Não e afetado pelas propriedades (top, right, bottom e left)</li>
+    </ul>
+
+    <div id="divStatic"> Position Static </div>
+
+    <h2> Posição Relativa </h2>
+    <ul>
+        <li>Ela é afetada por (top, right, bottom e left)</li>
+        <li>O espaço que ela deixa vago não é ocupado por outro elemento</li>
+    </ul>
+    <div id="divRelative"> Position Relative</div>
+
+    <h2> Posição Fixa </h2>
+    <ul>
+        <li>Ela é afetada por (top, right, bottom e left)</li>
+        <li></li>
+    </ul>
+    <div id="divFixed"> Posição Fixa </div>
+
+    <h2> Posição Absoluta </h2>
+    <ul>
+        <li>A position absolute anda dentro da</li>
+    </ul>
+    <div id="Pai">
+        <div id="divAbsolute"> Posição Absoluta </div>
+    </div>
+
+    <h2> Posição Grudar </h2>
+    <div id="divSticky"> Posição Sticky </div>
+
+    <nav>
+        <a href=""> Item 1 </a>
+        <a href=""> Item 2 </a>
+        <a href=""> Item 3 </a>
+    </nav>
+</body>
+</html>

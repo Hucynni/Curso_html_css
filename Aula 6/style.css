@@ -1,0 +1,40 @@
+#flex {
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: row;  /*Tem inline tamb */
+    flex-wrap: wrap;
+    /*0height: 800px;  */
+     justify-content: space-evenly; /* around e betwen */
+     align-items: center;/* felx-start, flex-end */
+}
+
+#flex div {
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*  
+#div1 {
+    flex-grow: 8;
+}
+
+#div2 {
+    flex-grow: 1;
+}
+
+#div3 {
+    flex-grow: 1;
+}
+
+#div4 {
+    flex-grow: 1;
+}
+
+#div5 {
+    flex-grow: 1;
+}
+*/
