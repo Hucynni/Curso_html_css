@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+:root {
+            --bg-btn: url('imagens/moon.png') ;
+            --bg-site: url('imagens/img\ luz\ 2.jpg') ;
+}
+
+
+.dark {
+          --bg-btn: url('imagens/sun.png') ;  
+          --bg-site: url('imagens/img\ black\ 2.jpg') ;
+}
+
+
+body {
+          background: var(--bg-site); 
+          width: 100%;
+          height: 100%; 
+ }
+
+
+ body> section {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+ }
+
+
+ section{
+    align-items: center;
+ }
+
+
+ div> img {
+    border-radius: 50%;
+    padding-left: 40%;
+    padding-right: 40%;
+ }
+
+
+ p {
+    color: blueviolet;
+    padding-left: 40%;
+    padding-right: 40%;
+ }
+
+
+ nav{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40%;
+    padding-right: 40%;
+ }
+
+
+ a {
+    text-decoration: none;
+    background: black;
+    color: aquamarine;
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+ }
+
+
+#btn {
+        height: 20px;
+        width: 20px;
+        border-radius: 50% ;
+        background: white var(--bg-btn) no-repeat center center ;
+        cursor: pointer;
+        align-items: center;
+        right: 40%;
+        left: 40%;
+}
+
+@media (max-width:570px) {
+    :root {
+        --bg-site: url('imagens/img\ luz\ 1.jpg') ;
+    }
+
+    .dark {
+        --bg-site: url('imagens/img\ black\ 1.jpg');
+    }
+}
+
+footer {
+    padding-left: 40%;
+    padding-right: 40%;
+    color: blueviolet;
+}
+
+
+    </style>
+
+</head>
+<body>
+    <section id="pr">
+        <div id="imgj">
+            <img src="Marcos.png" alt="minha foto">
+        </div>
+        <p>Marcos Roussine</p>
+        <div id="btn" onclick="toggleMode()"></div>
+        <br>
+        <br>
+        <br>
+        <nav>
+            <a href="">link1</a>
+            <a href="">link2</a>
+            <a href="">link3</a>
+            <a href="">link2</a>
+        </nav>
+    </section>
+    <br>
+
+    <footer>Desenvolvido por Marcos Roussine ;</footer>
+
+
+
+
+
+
+    <script>
+        function toggleMode() {
+            const html = document.documentElement;
+            html.classList.toggle("dark")
+        }
+    </script>
+    
+</body>
+</html>

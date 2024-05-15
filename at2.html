@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    {
+        box-sizing: border-box;
+    }
+
+    :root {
+        --bgnav:#333;
+        --font: white;
+        --bgsite: #f1f1f1;
+        --img: #aaa;
+    }
+
+    body {
+        padding: 10px;
+        background: var(--bgsite);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header {
+        background: var(--font);
+        height: 100px;
+        width: 100%;
+        
+    }
+
+    nav{
+        background: var(--bgnav);
+        width: 100%;
+        height: 50px;
+        margin-bottom: 20px;
+        display: flex;
+    }
+
+    nav a { 
+        text-decoration: none;
+        color: var(--font);
+        padding: 16px;
+        flex: 1;
+        min-width: 120px;
+        text-align: center;
+    }
+
+    nav a:hover {
+        background: var(--img);
+    }
+
+    section {
+        background: var(--font);
+        height: 350px;
+        
+    }
+
+    #section1, #section2, #contato {
+        width: 74%;
+        margin-bottom: 2%;
+    }
+
+    #sobremim, #postagens, #redes {
+        width: 24%;
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+
+    footer {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        background: var(--font);
+    }
+    
+    @media (max-width: 800px) {
+        body{
+            flex-direction: column;
+        }
+
+        nav {
+            flex-direction: column;
+        }
+
+        #section1, #section2, #contato {
+            width: 100%;
+        }
+
+        #sobremim, #postagens, #redes {
+            width: 100%;
+        }
+
+        #contato {
+            order: 7;
+        }
+
+        footer {
+            order: 8;
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+    <header>
+    <h1>Meu Site Responsivo</h1>
+    <p>Redimensiona a Tela do Navegador Para ver Como ele se Comporta</p>
+
+    </header>
+    
+    <nav> 
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+        <a href="">Link 4</a>
+    </nav>
+
+    <section id="section1">
+        <h2> Sessão 1 </h2>
+    </section>
+    <section id="sobremim">
+        <h2> Sobre mim </h2>
+    </section>
+    <section id="section2">
+        <h2> Sessão 2 </h2>
+    </section>
+    <section id="postagens">
+        <h2> Postagens Populares </h2>
+    </section>
+    <section id="contato">
+        <h2> Contato </h2>
+    </section>
+    <section id="redes">
+        <h2> Redes Sociais </h2>
+    </section>
+    
+    <footer>Desenvolvido por Marcos Roussine J.P.</footer>
+</body>
+</html>
